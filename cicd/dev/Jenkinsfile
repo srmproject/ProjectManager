@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools {gradle "maven36"}
+    tools {maven "maven36"}
 
     environment {
         APP_NAME = "srm-dev-projectmanager"

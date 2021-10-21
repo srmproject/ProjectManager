@@ -1,5 +1,5 @@
 server:
-  port: 16015
+  port: 8080
 
 spring:
   datasource:
@@ -15,14 +15,19 @@ spring:
       ddl-auto: update
       database-platform: ENC(/lFeSZf4jrfhQMibteFiF1zHJdsz6ALnuzBuQN5/BmTpY2LOQ9abzEKBV8kiYm5zMZjJ3vcQIEPxT3e8KtMt2ALhEe/4zmdQS/VHL0Ba+UM=)
 
+jenkins:
+  user: ENC(rKaCixWBS/Q+EWwEK/Ni0B7yEIfA9MfYBCbpIPpZrBKT/mAr4MFoUgjpAFIB9Qtx)
+  token: ENC(QFs/crXcjrxBM6PMBKWiYSLeyaANt8AhIFJ7X3nLU4e9hDhwL3OAYDlfTCIlSutN5wYTgE7aLcHPvA9YYURavMwy3B0AK/FG95cVQmvYA1g=)
+  endpoint: ENC(DPi7pIwGAC5LTpubGRGBmoARU1Fp5ZZ9/XjaTKdKyPA5ewIfVhl3IngvK0sp8z6Tb8SuLumYiy4zcm7cF50x0oB4ztYLNSzliom9TtZCd7c=)
+  testapi: ENC(DYpKCJGUyw3ifE1WqEi7PIAN8E2950hqVAQmbYRkFV9NChP2GNtwzNo1SZk32XuN9CdeW7kaKoNWCnSdXAaH9VVNFvusIkMvx2pYcq/6q1I=)
+
 endpoint:
-  jenkins_api: http://127.0.0.1:8000/
+  jenkins_api: ENC(pVUhZ3dqu4QnfAJIA88L2GDRNWvfU543cyq/Mm7yMdD3EQbI49BHNGyNr1ZJv8wlYgCfgNx+JcCi5ZFcDHWqPkkCes6E7KEnpBBpTHTf4J3Iw5elabDH4Nbh5M3HpPC9)
 
 api:
   jenkins:
     job:
       trigger: /job/trigger
-
 
 logging:
   level:

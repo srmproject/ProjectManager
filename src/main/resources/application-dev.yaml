@@ -1,0 +1,31 @@
+server:
+  port: 16015
+
+spring:
+  datasource:
+    url: ENC(Z+vE1oXlOGMjyrqnWGi9+DzjxN4o7VFuAjQfcRWVFv1hKgZhJamTbxOY1QBm9qOYxIi7Pt2qvA1oQ0qg7QKlglXZz9hluiqhGjtQXmnPk9FSVX7N0YhNuIXY5pKaua2bipseHohGObYojk3ipWHTHQ==)
+    driver-class-name: ENC(ONsngNq34YN+R+cWDYBwq2fHcZNCBhwM+U8mV8re6LmFiWraebf4rXZSGmjylj2GnzZOhSYtlNBj0rr8Xs5DpA==)
+    username: ENC(w9ssAtRYjmMUDjBXkqo7tw69wYL5YVFNsa17otsO6SIJ7Wj+6TwxsEamB4WmZkLl)
+    password: ENC(bfpMfCTQ6ogXirAvCp/bNvxy2uGg51/EBT6oGTUL0eEdNGuGjSCGs+m4BIUvN1yhDe0Hn5BouhkU4Z36Wj36Nw==)
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      database-platform: ENC(/lFeSZf4jrfhQMibteFiF1zHJdsz6ALnuzBuQN5/BmTpY2LOQ9abzEKBV8kiYm5zMZjJ3vcQIEPxT3e8KtMt2ALhEe/4zmdQS/VHL0Ba+UM=)
+
+endpoint:
+  jenkins_api: http://127.0.0.1:8000/
+
+api:
+  jenkins:
+    job:
+      trigger: /job/trigger
+
+
+logging:
+  level:
+    com:
+      srm:
+        projectmanager: debug

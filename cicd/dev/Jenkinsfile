@@ -18,7 +18,7 @@ pipeline {
         stage('project build'){
             steps{
                 withGradle {
-                    sh 'mvn package -P dev'
+                    sh 'mvn package -Djasypt.encryptor.password=$JASYPT_KEY -Dspring.profiles.active="local"'
                 }
             }
         }

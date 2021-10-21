@@ -21,6 +21,14 @@ jenkins:
   endpoint: ENC(DPi7pIwGAC5LTpubGRGBmoARU1Fp5ZZ9/XjaTKdKyPA5ewIfVhl3IngvK0sp8z6Tb8SuLumYiy4zcm7cF50x0oB4ztYLNSzliom9TtZCd7c=)
   testapi: ENC(DYpKCJGUyw3ifE1WqEi7PIAN8E2950hqVAQmbYRkFV9NChP2GNtwzNo1SZk32XuN9CdeW7kaKoNWCnSdXAaH9VVNFvusIkMvx2pYcq/6q1I=)
 
+endpoint:
+  jenkins_api: http://127.0.0.1:8000/
+
+api:
+  jenkins:
+    job:
+      trigger: /job/trigger
+
 logging:
   level:
     com:
